@@ -1,0 +1,48 @@
+{% extends "master.html" %}
+{% block title %}Home{% endblock %}
+
+{% block body %}
+{% load static %}
+<div class="container text-center">
+<div class="jumbotron ">
+    
+        <h1 class="display-4">About</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+</div>
+<div class="container">
+    <div class="shadow p-3 m-5 text-center w-75 bg-white rounded">Vision</div>
+
+    <div class="row">
+        
+        <div class="col-6"></div>
+        <div class="col-6 text-center">
+            <div class="profile">
+                <img class="profile" src="{% static 'images/users/5.jpg' %}">
+
+            </div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequuntur quo culpa earum velit
+            consectetur inventore delectus vitae a, vero accusantium odio iure recusandae illum ducimus perferendis
+            libero reprehenderit eaque.
+        </div>
+    </div>
+    <div class="shadow p-3 m-5 text-center w-75 bg-white rounded">Mission</div>
+        
+    <div class="row">
+        
+        <div class="col-6  text-center">
+            <div class="">
+                <img class="profile" src="{% static 'images/users/5.jpg' %}">
+
+            </div>
+            <div class="">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, atque impedit earum iure, laborum nemo et
+            repellendus eveniet voluptates cupiditate totam corrupti recusandae odit quidem fugit consequatur! Ad, optio
+            dolore!
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    {% endblock %}

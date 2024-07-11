@@ -1,0 +1,26 @@
+.profile{
+    /* border-radius: 5%; */
+    /* width: 240px;
+    height: 240px; */
+    max-width:480px;
+    padding-bottom: 10px;
+    /* padding-left: 20%; */
+    
+}
+.footer1{
+    color: #f8f9fa ;
+    background-color: #ce7891;
+    /* background-color:#f8f9fa ; */
+    /* color: ; */
+}
+.float-text{
+    transition: transform 0.3s ease;
+
+}
+.float-text:hover{
+    color: #ce7891;
+    border: 2px solid #ce7891;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+
+}
