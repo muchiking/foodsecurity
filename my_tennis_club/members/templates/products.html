@@ -11,17 +11,34 @@
     </div>
 </div>
 <div class="container">
-    <div class="shadow p-3 m-5 text-center w-75 bg-white rounded">Vision</div>
+    <div class="shadow text-center  bg-white rounded">Vision</div>
     <!-- {% for x in products %}
     <h1>{{ x }}</h1>
 {% endfor %} -->
 </div>
+<div class="container text-center"
+><form method="get" action="/product">
+    <div class="row" style="padding-top: 20px;">
+        <div class="col">
+    <input type="text" class="form-control"placeholder="Enter county" name="county">
+        </div>
+        <div class="col">
+    <input type="text" class="form-control" placeholder="Enter product" name="product">
+    </div>
+    </div>
+    <div style="padding-top: 20px;">
+    <button type="submit" class="btn btn-primary ">Search</button>
+</div>
+
+    
+    </form></div>
+
 <div class="row">
 {% for x in products %}
-<div class="col-lg-3 col-md-6 col-sm-12 card-container">
+<div class="col-lg-3 col-md-6 col-sm-12 card-container float-text">
     <div class="card" style="width: 30rem;">
         <img src="/members/static/images/product/{{x.image}}" class="card-img-top" alt="...">
-        <div class="card-body text-center">
+        <div class="card-body text-left">
           <h5 class="card-title">Item : {{x.product_name}}</h5>
           <p class="card-text">item details : {{x.product_details}}</p>
           <p class="card-text">county :{{x.location}} Town : {{x.town}}</p>

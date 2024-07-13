@@ -24,6 +24,10 @@ def members1(request):
 
 def product(request):
   data=managedb.get_products("product")
+  param = request.GET.get('county') 
+  param2 = request.GET.get('product') 
+  print(param.upper(),param2.upper())
+  
   template = loader.get_template('products.html') 
   # Keys for the dictionaries
   keys = ['id', 'product_name', 'product_details', 'expiry_date', 'vendor', 'location','phone','town','image']
