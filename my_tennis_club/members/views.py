@@ -26,7 +26,7 @@ def product(request):
   data=managedb.get_products("product")
   template = loader.get_template('products.html') 
   # Keys for the dictionaries
-  keys = ['id', 'product_name', 'product_details', 'expiry_date', 'vendor', 'location','phone','town']
+  keys = ['id', 'product_name', 'product_details', 'expiry_date', 'vendor', 'location','phone','town','image']
 
   products = [dict(zip(keys, values)) for values in data]
 

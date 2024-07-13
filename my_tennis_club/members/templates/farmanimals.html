@@ -16,9 +16,11 @@
 
     <div class="row">
         {% for x in products %}
-        <div class="col-lg-3 col-md-6 col-sm-12 p-3 float-text">
+        <div class="card-container col-lg-3 col-md-6 col-sm-12">
             <div class="card" style="width: 30rem;">
-                <img src="/members/static/images/product/bread.jpg" class="card-img-top" alt="...">
+                <div class="image-container">
+                <img src="/members/static/images/product/{{x.image}}" class="" alt="..." width="240px " height="180px">
+                 </div>
                 <div class="card-body text-center">
                   <h5 class="card-title">Item : {{x.Animal_name}}</h5>
                   <p class="card-text">item details : {{x.details}}</p>
@@ -26,9 +28,8 @@
                   <p class="card-text">vendor Name : {{x.vendor}}</p>
                   <p class="card-text">vendor Phone : {{x.phone}}</p>
         
-                  <!-- <p class="card-text">Expiry Date : {{x.expiry_date}}</p> -->
-        
-                  
+           
+
                 </div>
               </div>
             
